@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.LoggerFactory;
-import pages.LoginPage;
+import pages.Page;
 
 
 import java.time.Duration;
@@ -18,17 +18,17 @@ import java.time.Duration;
 import static utils.ElementHelper.getElementBy;
 
 public class Steps {
-    private LoginPage loginPage = new LoginPage();
+    private Page loginPage = new Page();
     private long startTime;
     private WebDriver driver;
-    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(LoginPage.class);
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Page.class);
 
-
-    @Step("Hesap Makinesi Login sayfasına git")
-    public void navigateToPage() {
+    @Step("Hesap Makinesi Login <url> sayfasına git")
+    public void navigateToPage(String url) {
         long elapsedTime = System.currentTimeMillis() - startTime;
-        System.out.println("Login sayfasına gitme süresi: " + elapsedTime + " ms");
-        loginPage.navigateToPage();
+        logger.info(url + " adresine gidiliyor");
+        logger.info("Login sayfasına gitme süresi: " + elapsedTime + " ms");
+        loginPage.navigateToPage(url);
 
     }
 

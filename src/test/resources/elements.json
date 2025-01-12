@@ -128,5 +128,15 @@
     "key": "Sonuc_105",
     "value": "//span[@class='css-1jxf684 r-zz5t5d r-vw2c0b r-1ff274t' and text()='105']",
     "type": "xpath"
+  },
+  {
+    "key": "Sonuc_340",
+    "value": "//span[@class='css-1jxf684 r-zz5t5d r-vw2c0b r-1ff274t' and text()='340']",
+    "type": "xpath"
+  },
+  {
+    "key": "Sonuc_5",
+    "value": "//span[@class='css-1jxf684 r-zz5t5d r-vw2c0b r-1ff274t' and text()='5']",
+    "type": "xpath"
   }
 ]

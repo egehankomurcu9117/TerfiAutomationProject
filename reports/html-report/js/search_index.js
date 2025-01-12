@@ -1,1 +1,1 @@
-var index = {"Tags":{"smoke_login":["specs/HesapMakinesi.html"]},"Specs":{"Login Specification":["specs/HesapMakinesi.html"]}};
+var index = {"Tags":{"Percentage_transaction":["specs/HesapMakinesi.html"]},"Specs":{"Hesap Makinesi Specification":["specs/HesapMakinesi.html"]}};

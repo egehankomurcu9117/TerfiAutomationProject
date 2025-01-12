@@ -8,7 +8,6 @@ Tags: smoke_login
 * "calculatorText" elementi görünür mü
 * "calculatorText" elementine tıkla
 
-
 ## Monthly Budget Calculation
 Tags: budget_monthly
 * Login sayfası açılır ve "egehan.komurcu@testinium.com" ve "Fb1907***" alanları doldurularak hesap makinesi açılır
@@ -42,8 +41,7 @@ Tags: expense_daily
 * "arti_Button" tıklanır ve işlemi yapılır
 * "5_Button" elementine tıkla
 * "esittir_Button" tıklanır ve işlemi yapılır
-
-
+* "Sonuc_5" elementi görünür mü
 
 ## Monthly Budget Calculatione
 Tags: budget_monthlye
@@ -62,21 +60,12 @@ Tags: budget_monthlye
 * "esittir_Button" tıklanır ve işlemi yapılır
 * "Sonuc_105" elementi görünür mü
 
+## Percentage transaction
+Tags: Percentage_transaction
+* Login sayfası açılır ve "egehan.komurcu@testinium.com" ve "Fb1907***" alanları doldurularak hesap makinesi açılır
+* 2000 değeri yazılır
+* "carp_Button" tıklanır ve işlemi yapılır
+* 0,17 değeri yazılır
+* "esittir_Button" tıklanır ve işlemi yapılır
+* "Sonuc_340" elementi görünür mü
 
-
-//0_Button
-//1_Button
-//2_Button
-//3_Button
-//4_Button
-//5_Button
-//6_Button
-//7_Button
-//8_Button
-//9_Button
-//virgul_Button
-//arti_Button
-//eksi_Button
-//bol_Button
-//carp_Button
-//esittir_Button

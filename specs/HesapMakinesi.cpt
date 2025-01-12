@@ -2,7 +2,7 @@ Created by egehankomurcu on 12.01.2025
 
 This is a concept file with following syntax for each concept.
 # Login sayfası açılır ve <k_adi> ve <pass> alanları doldurularak hesap makinesi açılır
-* Hesap Makinesi Login sayfasına git
+* Hesap Makinesi Login "https://catchylabs-webclient.testinium.com/" sayfasına git
 * "usernameField" elementine tıkla
 * "usernameField" elementine "egehan.komurcu@testinium.com" textini yaz
 * "usernameField" elementi görünür mü
@@ -30,6 +30,19 @@ This is a concept file with following syntax for each concept.
 * "virgul_Button" elementine tıkla
 * "0_Button" elementine tıkla
 * "4_Button" elementine tıkla
+
+# 0,17 değeri yazılır
+* "0_Button" elementine tıkla
+* "virgul_Button" elementine tıkla
+* "1_Button" elementine tıkla
+* "7_Button" elementine tıkla
+
+# 2000 değeri yazılır
+* "2_Button" elementine tıkla
+* "0_Button" elementine tıkla
+* "0_Button" elementine tıkla
+* "0_Button" elementine tıkla
+
 
 # 200 değeri yazılır
 * "2_Button" elementine tıkla

@@ -10,13 +10,13 @@ import utils.ElementHelper;
 
 import java.time.Duration;
 
-public class LoginPage extends BasePage {
+public class Page extends BasePage {
 
     private static final long WAIT_TIMEOUT_SECONDS = 20;
-    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(LoginPage.class);
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Page.class);
 
-    public void navigateToPage() {
-        driver.get("https://catchylabs-webclient.testinium.com/");
+    public void navigateToPage(String url) {
+        driver.get(url);
     }
 
     public void clickElement(String key) {
