@@ -1,0 +1,35 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+{"logLevel":"debug","message":"gauge-java took 582milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 582"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 62108"}
+{"logLevel":"info","message":"Listening on port:62108"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.enterText' and 'steps.LoginSteps.enterText'"}
+{"logLevel":"debug","message":"Found {} elementine {} textini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.navigateToLoginPage' and 'steps.LoginSteps.navigateToLoginPage'"}
+{"logLevel":"debug","message":"Found Login sayfasına git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyElementVisible' and 'steps.LoginSteps.verifyElementVisible'"}
+{"logLevel":"debug","message":"Found {} elementi görünür mü in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.clickElement' and 'steps.LoginSteps.clickElement'"}
+{"logLevel":"debug","message":"Found {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} elementine tıkla : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} elementine {} textini yaz : public void enterText(String key, String text)"}
+{"logLevel":"debug","message":"\t{} elementi görünür mü : public void verifyElementVisible(String key)"}
+{"logLevel":"debug","message":"\tLogin sayfasına git : public void navigateToLoginPage()"}
+Oca 11, 2025 2:53:19 ÖS org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+Oca 11, 2025 2:53:19 ÖS org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.265. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+{"logLevel":"debug","message":"Executing 'Login sayfasına git' using 'class steps.LoginSteps.navigateToLoginPage"}
+{"logLevel":"debug","message":"Executing '{} elementi görünür mü' using 'class steps.LoginSteps.verifyElementVisible"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

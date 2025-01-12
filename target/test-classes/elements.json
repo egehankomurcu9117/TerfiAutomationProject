@@ -1,0 +1,132 @@
+[
+  {
+    "key": "usernameField",
+    "value": "//input[@placeholder='Username']",
+    "type": "xpath"
+  },
+  {
+    "key": "passwordField",
+    "value": "//input[@placeholder='Password']",
+    "type": "xpath"
+  },
+  {
+    "key": "loginButton",
+    "value": "//div[text()='Login']",
+    "type": "xpath"
+  },
+  {
+    "key": "openCalculatorButton",
+    "value": "//div[text()='Open Calculator']",
+    "type": "xpath"
+  },
+  {
+    "key": "calculatorText",
+    "value": "div.css-175oi2r.r-x4wa6u.r-z2wwpe.r-1777fci.r-1ifxtd0.r-mjyw6.r-edyy15",
+    "type": "css"
+  },
+  {
+    "key": "acButton",
+    "value": "//div[text()='AC']",
+    "type": "xpath"
+  },
+  {
+    "key": "0_Button",
+    "value": "//div[text()='0']",
+    "type": "xpath"
+  },
+  {
+    "key": "1_Button",
+    "value": "//div[text()='1']",
+    "type": "xpath"
+  },
+  {
+    "key": "2_Button",
+    "value": "//div[text()='2']",
+    "type": "xpath"
+  },
+  {
+    "key": "3_Button",
+    "value": "//div[text()='3']",
+    "type": "xpath"
+  },
+  {
+    "key": "4_Button",
+    "value": "//div[text()='4']",
+    "type": "xpath"
+  },
+  {
+    "key": "5_Button",
+    "value": "//div[text()='5']",
+    "type": "xpath"
+  },
+  {
+    "key": "6_Button",
+    "value": "//div[text()='6']",
+    "type": "xpath"
+  },
+  {
+    "key": "7_Button",
+    "value": "//div[text()='7']",
+    "type": "xpath"
+  },
+  {
+    "key": "8_Button",
+    "value": "//div[text()='8']",
+    "type": "xpath"
+  },
+  {
+    "key": "9_Button",
+    "value": "//div[text()='9']",
+    "type": "xpath"
+  },
+  {
+    "key": "virgul_Button",
+    "value": "//div[text()=',']",
+    "type": "xpath"
+  },
+  {
+    "key": "arti_Button",
+    "value": "//div[text()='+']",
+    "type": "xpath"
+  },
+  {
+    "key": "eksi_Button",
+    "value": "//div[text()='-']",
+    "type": "xpath"
+  },
+  {
+    "key": "bol_Button",
+    "value": "//div[text()='/']",
+    "type": "xpath"
+  },
+  {
+    "key": "carp_Button",
+    "value": "//div[text()='*']",
+    "type": "xpath"
+  },
+  {
+    "key": "esittir_Button",
+    "value": "//div[text()='=']",
+    "type": "xpath"
+  },
+  {
+    "key": "Sonuc_200",
+    "value": "//span[@class='css-1jxf684 r-zz5t5d r-vw2c0b r-1ff274t' and text()='200']",
+    "type": "xpath"
+  },
+  {
+    "key": "Sonuc_210",
+    "value": "//span[@class='css-1jxf684 r-zz5t5d r-vw2c0b r-1ff274t' and text()='210']",
+    "type": "xpath"
+  },
+  {
+    "key": "Sonuc_1050",
+    "value": "//span[@class='css-1jxf684 r-zz5t5d r-vw2c0b r-1ff274t' and text()='1050']",
+    "type": "xpath"
+  },
+  {
+    "key": "Sonuc_105",
+    "value": "//span[@class='css-1jxf684 r-zz5t5d r-vw2c0b r-1ff274t' and text()='105']",
+    "type": "xpath"
+  }
+]

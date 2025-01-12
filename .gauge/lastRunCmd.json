@@ -1,0 +1,8 @@
+[
+	"/usr/local/bin/gauge",
+	"run",
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"/Users/egehankomurcu/IdeaProjects/TerfiAutomationProjectGitHub/specs/HesapMakinesi.spec:5"
+]

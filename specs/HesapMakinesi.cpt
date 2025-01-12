@@ -1,0 +1,50 @@
+Created by egehankomurcu on 12.01.2025
+
+This is a concept file with following syntax for each concept.
+# Login sayfası açılır ve <k_adi> ve <pass> alanları doldurularak hesap makinesi açılır
+* Hesap Makinesi Login sayfasına git
+* "usernameField" elementine tıkla
+* "usernameField" elementine "egehan.komurcu@testinium.com" textini yaz
+* "usernameField" elementi görünür mü
+* "passwordField" elementine tıkla
+* "passwordField" elementine "Fb1907***" textini yaz
+* "passwordField" elementi görünür mü
+* "loginButton" elementi görünür mü
+* "loginButton" elementine tıkla
+* "openCalculatorButton" elementine tıkla
+* "acButton" elementi görünür mü
+
+# 1000 değeri yazılır
+* "1_Button" elementine tıkla
+* "0_Button" elementine tıkla
+* "0_Button" elementine tıkla
+* "0_Button" elementine tıkla
+
+# 800 değeri yazılır
+* "8_Button" elementine tıkla
+* "0_Button" elementine tıkla
+* "0_Button" elementine tıkla
+
+# 0,04 değeri yazılır
+* "0_Button" elementine tıkla
+* "virgul_Button" elementine tıkla
+* "0_Button" elementine tıkla
+* "4_Button" elementine tıkla
+
+# 200 değeri yazılır
+* "2_Button" elementine tıkla
+* "0_Button" elementine tıkla
+* "0_Button" elementine tıkla
+
+# 20 değeri yazılır
+* "2_Button" elementine tıkla
+* "0_Button" elementine tıkla
+
+# 10 değeri yazılır
+* "1_Button" elementine tıkla
+* "0_Button" elementine tıkla
+
+# <operator> tıklanır ve işlemi yapılır
+* Bekleme "2000" milisaniye
+* <operator> elementine tıkla
+* Bekleme "2000" milisaniye

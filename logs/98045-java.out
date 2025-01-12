@@ -1,0 +1,46 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+{"logLevel":"debug","message":"gauge-java took 473milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 473"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 49216"}
+{"logLevel":"info","message":"Listening on port:49216"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyPageLoadTime' and 'steps.LoginSteps.verifyPageLoadTime'"}
+{"logLevel":"debug","message":"Found Sayfa {} saniye içinde yüklenmeli in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.enterPassword' and 'steps.LoginSteps.enterPassword'"}
+{"logLevel":"debug","message":"Found {} şifresini gir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.clickLoginButton' and 'steps.LoginSteps.clickLoginButton'"}
+{"logLevel":"debug","message":"Found Login butonuna tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyProductsPageRedirection' and 'steps.LoginSteps.verifyProductsPageRedirection'"}
+{"logLevel":"debug","message":"Found Ürünler sayfasına yönlendirildiğini doğrula in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyAllElementsVisible' and 'steps.LoginSteps.verifyAllElementsVisible'"}
+{"logLevel":"debug","message":"Found Tüm login sayfası elementleri görünür olmalı in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.navigateToLoginPage' and 'steps.LoginSteps.navigateToLoginPage'"}
+{"logLevel":"debug","message":"Found Login sayfasına git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyErrorMessage' and 'steps.LoginSteps.verifyErrorMessage'"}
+{"logLevel":"debug","message":"Found Hata mesajının görüntülendiğini doğrula in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.enterUsername' and 'steps.LoginSteps.enterUsername'"}
+{"logLevel":"debug","message":"Found {} kullanıcı adını gir in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tLogin butonuna tıkla : public void clickLoginButton()"}
+{"logLevel":"debug","message":"\tÜrünler sayfasına yönlendirildiğini doğrula : public void verifyProductsPageRedirection()"}
+{"logLevel":"debug","message":"\tSayfa {} saniye içinde yüklenmeli : public void verifyPageLoadTime(ınt seconds)"}
+{"logLevel":"debug","message":"\t{} şifresini gir : public void enterPassword(String password)"}
+{"logLevel":"debug","message":"\tLogin sayfasına git : public void navigateToLoginPage()"}
+{"logLevel":"debug","message":"\tTüm login sayfası elementleri görünür olmalı : public void verifyAllElementsVisible()"}
+{"logLevel":"debug","message":"\t{} kullanıcı adını gir : public void enterUsername(String username)"}
+{"logLevel":"debug","message":"\tHata mesajının görüntülendiğini doğrula : public void verifyErrorMessage()"}
+Oca 10, 2025 11:26:21 ÖS org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+Oca 10, 2025 11:26:21 ÖS org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.265. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+{"logLevel":"debug","message":"Executing 'Login sayfasına git' using 'class steps.LoginSteps.navigateToLoginPage"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

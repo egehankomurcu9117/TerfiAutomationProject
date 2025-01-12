@@ -1,0 +1,165 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: A number (20) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 556milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 556"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 51809"}
+{"logLevel":"info","message":"Listening on port:51809"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.enterText' and 'steps.LoginSteps.enterText'"}
+{"logLevel":"debug","message":"Found {} elementine {} textini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.waitForElementToBeVisible' and 'steps.LoginSteps.waitForElementToBeVisible'"}
+{"logLevel":"debug","message":"Found {} elementi görüntülenene kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.wait' and 'steps.LoginSteps.wait'"}
+{"logLevel":"debug","message":"Found Bekleme {} milisaniye in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.navigateToLoginPage' and 'steps.LoginSteps.navigateToLoginPage'"}
+{"logLevel":"debug","message":"Found Hesap Makinesi Login sayfasına git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyElementVisible' and 'steps.LoginSteps.verifyElementVisible'"}
+{"logLevel":"debug","message":"Found {} elementi görünür mü in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.clickElement' and 'steps.LoginSteps.clickElement'"}
+{"logLevel":"debug","message":"Found {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} elementi görüntülenene kadar bekle : public void waitForElementToBeVisible(String elementName)"}
+{"logLevel":"debug","message":"\tHesap Makinesi Login sayfasına git : public void navigateToLoginPage()"}
+{"logLevel":"debug","message":"\t{} elementine tıkla : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} elementine {} textini yaz : public void enterText(String key, String text)"}
+{"logLevel":"debug","message":"\t{} elementi görünür mü : public void verifyElementVisible(String key)"}
+{"logLevel":"debug","message":"\tBekleme {} milisaniye : public void wait(ınt milliseconds) throws InterruptedException"}
+Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+Exporting webdriver.chrome.driver as /Users/egehankomurcu/.cache/selenium/chromedriver/mac-arm64/131.0.6778.264/chromedriver
+Oca 12, 2025 7:30:10 ÖS org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+Oca 12, 2025 7:30:10 ÖS org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.265. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Test setUp başladı.
+{"logLevel":"debug","message":"Executing 'Hesap Makinesi Login sayfasına git' using 'class steps.LoginSteps.navigateToLoginPage"}
+Tarayıcı kapatıldı.
+Error executing FreeMarker template
+FreeMarker template error:
+Template inclusion failed (for parameter value "partials/exceptıon.ftl"):
+Template not found for name "spark/partials/exceptıon.ftl".
+The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.aventstack.extentreports.ExtentReports, basePackagePath="templates/" /* relatively to resourceLoaderClass pkg */).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "partials/${view.toString()}...  [in template "spark/spark.spa.ftl" at line 27, column 36]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core._MiscTemplateException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Include.accept(Include.java:164)
+	at freemarker.core.Environment.visit(Environment.java:370)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:321)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:244)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:644)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:108)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:94)
+	at freemarker.core.Environment.visit(Environment.java:334)
+	at freemarker.core.Environment.visit(Environment.java:340)
+	at freemarker.core.Environment.process(Environment.java:313)
+	at freemarker.template.Template.process(Template.java:383)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.processTemplate(FreemarkerTemplate.java:52)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.getSource(FreemarkerTemplate.java:39)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.writeTemplate(FreemarkerTemplate.java:45)
+	at com.aventstack.extentreports.reporter.AbstractFileReporter.processTemplate(AbstractFileReporter.java:74)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.flush(ExtentSparkReporter.java:149)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.access$100(ExtentSparkReporter.java:27)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:121)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:113)
+	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
+	at utils.ExtentReportManager.flush(ExtentReportManager.java:32)
+	at com.automation.base.BaseTest.tearDown(BaseTest.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:30)
+	at com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:92)
+	at com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:78)
+	at com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:35)
+	at com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+	at com.thoughtworks.gauge.processor.SpecExecutionEndingProcessor.process(SpecExecutionEndingProcessor.java:25)
+	at com.thoughtworks.gauge.RunnerServiceHandler.lambda$finishSpecExecution$10(RunnerServiceHandler.java:217)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: freemarker.template.TemplateNotFoundException: Template not found for name "spark/partials/exceptıon.ftl".
+The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.aventstack.extentreports.ExtentReports, basePackagePath="templates/" /* relatively to resourceLoaderClass pkg */).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2869)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2883)
+	at freemarker.core.Include.accept(Include.java:162)
+	... 38 more
+Oca 12, 2025 7:30:11 ÖS com.aventstack.extentreports.reporter.ExtentSparkReporter flush
+SEVERE: An exception occurred
+FreeMarker template error:
+Template inclusion failed (for parameter value "partials/exceptıon.ftl"):
+Template not found for name "spark/partials/exceptıon.ftl".
+The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.aventstack.extentreports.ExtentReports, basePackagePath="templates/" /* relatively to resourceLoaderClass pkg */).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "partials/${view.toString()}...  [in template "spark/spark.spa.ftl" at line 27, column 36]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core._MiscTemplateException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Include.accept(Include.java:164)
+	at freemarker.core.Environment.visit(Environment.java:370)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:321)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:244)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:644)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:108)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:94)
+	at freemarker.core.Environment.visit(Environment.java:334)
+	at freemarker.core.Environment.visit(Environment.java:340)
+	at freemarker.core.Environment.process(Environment.java:313)
+	at freemarker.template.Template.process(Template.java:383)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.processTemplate(FreemarkerTemplate.java:52)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.getSource(FreemarkerTemplate.java:39)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.writeTemplate(FreemarkerTemplate.java:45)
+	at com.aventstack.extentreports.reporter.AbstractFileReporter.processTemplate(AbstractFileReporter.java:74)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.flush(ExtentSparkReporter.java:149)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.access$100(ExtentSparkReporter.java:27)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:121)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:113)
+	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
+	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
+	at utils.ExtentReportManager.flush(ExtentReportManager.java:32)
+	at com.automation.base.BaseTest.tearDown(BaseTest.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:30)
+	at com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.executeHook(HooksExecutor.java:92)
+	at com.thoughtworks.gauge.execution.HooksExecutor$TaggedHookExecutor.execute(HooksExecutor.java:78)
+	at com.thoughtworks.gauge.execution.HooksExecutor.execute(HooksExecutor.java:35)
+	at com.thoughtworks.gauge.processor.MethodExecutionMessageProcessor.executeHooks(MethodExecutionMessageProcessor.java:55)
+	at com.thoughtworks.gauge.processor.SpecExecutionEndingProcessor.process(SpecExecutionEndingProcessor.java:25)
+	at com.thoughtworks.gauge.RunnerServiceHandler.lambda$finishSpecExecution$10(RunnerServiceHandler.java:217)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: freemarker.template.TemplateNotFoundException: Template not found for name "spark/partials/exceptıon.ftl".
+The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.aventstack.extentreports.ExtentReports, basePackagePath="templates/" /* relatively to resourceLoaderClass pkg */).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2869)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2883)
+	at freemarker.core.Include.accept(Include.java:162)
+	... 38 more
+
+ExtentReports raporu oluşturuldu.
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

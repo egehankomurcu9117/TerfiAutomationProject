@@ -1,0 +1,42 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: A number (20) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+{"logLevel":"debug","message":"gauge-java took 450milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 450"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 58322"}
+{"logLevel":"info","message":"Listening on port:58322"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.enterText' and 'steps.LoginSteps.enterText'"}
+{"logLevel":"debug","message":"Found {} elementine {} textini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.waitForElementToBeVisible' and 'steps.LoginSteps.waitForElementToBeVisible'"}
+{"logLevel":"debug","message":"Found {} elementi görüntülenene kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.wait' and 'steps.LoginSteps.wait'"}
+{"logLevel":"debug","message":"Found Bekleme {} milisaniye in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.navigateToLoginPage' and 'steps.LoginSteps.navigateToLoginPage'"}
+{"logLevel":"debug","message":"Found Hesap Makinesi Login sayfasına git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyElementVisible' and 'steps.LoginSteps.verifyElementVisible'"}
+{"logLevel":"debug","message":"Found {} elementi görünür mü in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.clickElement' and 'steps.LoginSteps.clickElement'"}
+{"logLevel":"debug","message":"Found {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} elementi görüntülenene kadar bekle : public void waitForElementToBeVisible(String elementName)"}
+{"logLevel":"debug","message":"\tHesap Makinesi Login sayfasına git : public void navigateToLoginPage()"}
+{"logLevel":"debug","message":"\t{} elementine tıkla : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} elementine {} textini yaz : public void enterText(String key, String text)"}
+{"logLevel":"debug","message":"\t{} elementi görünür mü : public void verifyElementVisible(String key)"}
+{"logLevel":"debug","message":"\tBekleme {} milisaniye : public void wait(ınt milliseconds) throws InterruptedException"}
+Using chromedriver 131.0.6778.264 (resolved driver for Chrome 131)
+Exporting webdriver.chrome.driver as /Users/egehankomurcu/.cache/selenium/chromedriver/mac-arm64/131.0.6778.264/chromedriver
+Oca 12, 2025 7:54:36 ÖS org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+Oca 12, 2025 7:54:36 ÖS org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.265. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+{"logLevel":"debug","message":"Executing 'Hesap Makinesi Login sayfasına git' using 'class steps.LoginSteps.navigateToLoginPage"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

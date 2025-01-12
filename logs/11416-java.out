@@ -1,0 +1,27 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 403milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 403"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 65511"}
+{"logLevel":"info","message":"Listening on port:65511"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.openLoginPage' and 'steps.LoginSteps.openLoginPage'"}
+{"logLevel":"debug","message":"Found Kullanıcı login sayfasını açar in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.login' and 'steps.LoginSteps.login'"}
+{"logLevel":"debug","message":"Found Kullanıcı {} ve {} bilgileriyle giriş yapar in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.LoginSteps.verifyDashboard' and 'steps.LoginSteps.verifyDashboard'"}
+{"logLevel":"debug","message":"Found Dashboard ekranını görür in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tKullanıcı login sayfasını açar : public void openLoginPage()"}
+{"logLevel":"debug","message":"\tDashboard ekranını görür : public void verifyDashboard()"}
+{"logLevel":"debug","message":"\tKullanıcı {} ve {} bilgileriyle giriş yapar : public void login(String username, String password)"}
+{"logLevel":"debug","message":"Executing 'Kullanıcı login sayfasını açar' using 'class steps.LoginSteps.openLoginPage"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
