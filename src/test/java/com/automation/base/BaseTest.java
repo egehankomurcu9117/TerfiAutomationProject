@@ -10,21 +10,20 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+
 public class BaseTest {
-    protected static WebDriver driver;
     private static final Logger log = LoggerFactory.getLogger(BaseTest.class);
     private static ExtentReports extent;
     private static ExtentTest test;
     private static ExtentTest scenario;
     private static final String PROJECTROOT = System.getProperty("user.dir");
     private static final String REPORTPATH = PROJECTROOT + "/reports/extent-report.html";
-    private static final String SCREENSHOTS_PATH = PROJECTROOT + "/reports/screenshots";
+    private static final String SCREENSHOTSPATH = PROJECTROOT + "/reports/screenshots";
 
     @BeforeSuite
     public void setupReport() {
@@ -35,8 +34,8 @@ public class BaseTest {
             ExtentSparkReporter spark = new ExtentSparkReporter(REPORTPATH);
 
             spark.config().setTheme(Theme.DARK);
-            spark.config().setDocumentTitle("Hesap Makinesi Uygulaması Test Raporu");
-            spark.config().setReportName("Hesap Makinesi Uygulaması Test Raporu");
+            spark.config().setDocumentTitle("Banka Uygulaması Test Raporu");
+            spark.config().setReportName("Banka Uygulaması Test Raporu");
             spark.config().setTimeStampFormat("dd/MM/yyyy HH:mm:ss");
             spark.config().setEncoding("UTF-8");
 
@@ -50,38 +49,67 @@ public class BaseTest {
     }
 
     @BeforeSpec
-    public void setUp(ExecutionContext context) {
+    public void beforeSpec(ExecutionContext context) {
         test = extent.createTest(context.getCurrentSpecification().getName());
-
     }
 
-    @AfterSpec
-    public void tearDown(ExecutionContext context) {
+    @BeforeScenario
+    public void setup(ExecutionContext context) {
+        log.info("!!!!------- Test Başlatılıyor -------!!!!");
+        scenario = test.createNode(context.getCurrentScenario().getName());
+
+        WebDriver driver = DriverFactory.getDriver();
+        driver.manage().window().maximize();
+    }
+
+    @BeforeStep
+    public void beforeStep(ExecutionContext context) {
+        if (scenario != null) {
+            scenario.info("Adım Başladı: " + context.getCurrentStep().getText());
+        }
+    }
+
+    @AfterStep
+    public void afterStep(ExecutionContext context) {
         if (context.getCurrentStep().getIsFailing()) {
             takeScreenshot("Failed_Step_" + System.currentTimeMillis());
             scenario.fail("Adım başarısız: " + context.getCurrentStep().getText());
         }
     }
+
+    @AfterScenario
+    public void tearDown(ExecutionContext context) {
+        try {
+            if (context.getCurrentScenario().getIsFailing()) {
+                scenario.fail("Senaryo başarısız oldu");
+                takeScreenshot("Failed_Scenario_" + System.currentTimeMillis());
+            }
+        } finally {
+            DriverFactory.closeDriver();
+        }
+    }
+
     @AfterSuite
     public void afterSuite() {
         if (extent != null) {
             try {
                 extent.flush();
             } catch (Exception e) {
-                log.error("Report oluşturulurken hata: ", e);
+                log.error("Report oluşturulurken hata yaşandı: ", e);
             }
         }
     }
+
     private void takeScreenshot(String name) {
         try {
             WebDriver driver = DriverFactory.getDriver();
             if (driver instanceof TakesScreenshot) {
                 byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
-                Files.createDirectories(Paths.get(SCREENSHOTS_PATH));
+                Files.createDirectories(Paths.get(SCREENSHOTSPATH));
 
                 String fileName = name.replaceAll("[^a-zA-Z0-9.-]", "_") + ".png";
-                Path screenshotPath = Paths.get(SCREENSHOTS_PATH, fileName);
+                Path screenshotPath = Paths.get(SCREENSHOTSPATH, fileName);
                 Files.write(screenshotPath, screenshot);
 
                 if (scenario != null) {
@@ -92,5 +120,10 @@ public class BaseTest {
         } catch (IOException e) {
             log.error("Screenshot alınırken hata: ", e);
         }
+    }
+
+    // Getter metodu ekleyerek scenario nesnesine erişimi sağlıyoruz
+    public static ExtentTest getScenario() {
+        return scenario;
     }
 }

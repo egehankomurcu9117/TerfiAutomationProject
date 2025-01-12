@@ -111,6 +111,6 @@ Testler çalıştırıldıktan sonra HTML rapor otomatik olarak `reports` klasö
 
 ## İletişim
 
-Proje Sorumlusu - [@yourusername](https://github.com/yourusername)
+Proje Sorumlusu - [@egehankomurcu9117](https://github.com/egehankomurcu9117)
 
-Proje Linki: [https://github.com/yourusername/gauge-web-automation](https://github.com/yourusername/gauge-web-automation)
+Proje Linki: [https://github.com/egehankomurcu9117/TerfiAutomationProject](https://github.com/egehankomurcu9117/TerfiAutomationProject)

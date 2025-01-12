@@ -1,10 +1,12 @@
 package steps;
 
 import com.automation.base.BasePage;
+import com.automation.base.BaseTest;
 import com.thoughtworks.gauge.Step;
 import org.assertj.core.api.Assertions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,10 +27,19 @@ public class Steps {
 
     @Step("Hesap Makinesi Login <url> sayfasına git")
     public void navigateToPage(String url) {
-        long elapsedTime = System.currentTimeMillis() - startTime;
+
+        try {
+            long elapsedTime = System.currentTimeMillis() - startTime;
+
         logger.info(url + " adresine gidiliyor");
+        BaseTest.getScenario().pass(url + " adresine gidiliyor");
         logger.info("Login sayfasına gitme süresi: " + elapsedTime + " ms");
-        loginPage.navigateToPage(url);
+        loginPage.navigateToPage(url);}
+        catch (TimeoutException e) {
+            logger.error(" elementi " + startTime +  " saniye içerisinde bulunamadı.", e);
+            BaseTest.getScenario().fail( " elementi " + startTime +  " saniye içerisinde bulunamadı.");
+            Assert.fail(  " elementi " + startTime +  " saniye içerisinde bulunamadı.");
+        }
 
     }
 
